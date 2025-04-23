@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Destination Recommender</title>
+    <link rel="stylesheet" href="weatherstyles.css">
+</head>
+<body>
+    <header>
+        <h1>Find Your Perfect Travel Destination</h1>
+    </header>
+    <main>
+        <section class="selection">
+            <h2>Select Your Preferences</h2>
+            <form id="preferenceForm">
+                <label for="weather">Preferred Weather:</label>
+                <select id="weather" name="weather">
+                    <option value="">--Choose Weather--</option>
+                    <option value="spring">Spring</option>
+                    <option value="summer">Summer</option>
+                    <option value="autumn">Autumn</option>
+                    <option value="winter">Winter</option>
+                </select>
+
+                <label for="landscape">Preferred Landscape:</label>
+                <select id="landscape" name="landscape">
+                    <option value="">--Choose Landscape--</option>
+                    <option value="mountains">Mountains</option>
+                    <option value="beaches">Beaches</option>
+                    <option value="lakes">Lakes</option>
+                    <option value="forests">Forests</option>
+                </select>
+
+                <button type="submit">Show Recommendations</button>
+            </form>
+        </section>
+        <section class="recommendations" id="recommendations">
+            <!-- Recommendations will appear here -->
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2025 Travel Recommender</p>
+    </footer>
+    <script src="weatherscript.js"></script>
+</body>
+</html>

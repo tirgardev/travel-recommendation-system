@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Solo Travel Tips</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        header {
+            background-color: #007bff;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        h2 {
+            color: #007bff;
+            text-align: center;
+        }
+
+        .tip {
+            margin: 15px 0;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            background-color: #f9f9f9;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .tip:hover {
+            background-color: #e9ecef;
+        }
+
+        .tip-content {
+            display: none;
+            margin-top: 10px;
+            padding: 10px;
+            border-left: 4px solid #007bff;
+            background-color: #f1f1f1;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #007bff;
+            color: white;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Solo Travel Tips</h1>
+    <p>Your guide to safe and enjoyable solo adventures!</p>
+</header>
+
+<div class="container">
+    <h2>Tips for Solo Travelers</h2>
+    
+    <div class="tip" onclick="toggleTip('tip1')">
+        <strong>1. Plan Your Itinerary</strong>
+        <div id="tip1" class="tip-content">
+            Make sure to have a rough itinerary planned out. Research your destination and know the key places you want to visit.
+        </div>
+    </div>
+
+    <div class="tip" onclick="toggleTip('tip2')">
+        <strong>2. Stay Connected</strong>
+        <div id="tip2" class="tip-content">
+            Keep your phone charged and have a portable charger. Consider getting a local SIM card or an international plan to stay connected.
+        </div>
+    </div>
+
+    <div class="tip" onclick="toggleTip('tip3')">
+        <strong>3. Trust Your Instincts</strong>
+        <div id="tip3" class="tip-content">
+            If something doesn’t feel right, trust your gut. It’s important to prioritize your safety above all else.
+        </div>
+    </div>
+
+    <div class="tip" onclick="toggleTip('tip4')">
+        <strong>4. Pack Light</strong>
+        <div id="tip4" class="tip-content">
+            Traveling solo means you’ll be responsible for your own luggage. Pack only what you need to make your journey easier.
+        </div>
+    </div>
+
+    <div class="tip" onclick="toggleTip('tip5')">
+        <strong>5. Meet Other Travelers</strong>
+        <div id="tip5" class="tip-content">
+            Stay in hostels or join group tours to meet other travelers. It’s a great way to make friends and share experiences.
+        </div>
+    </div>
+</div>
+
+<footer>
+    <p>&copy; 2023 Solo Travel Tips. All rights reserved.</p>
+</footer>
+
+<script>
+    function toggleTip(tipId) {
+        const tipContent = document.getElementById(tipId);
+        if (tipContent.style.display === "none" || tipContent.style.display === "") {
+            tipContent.style.display = "block";
+        } else {
+            tipContent.style.display = "none";
+        }
+    }
+</script>
+
+</body>
+</html>

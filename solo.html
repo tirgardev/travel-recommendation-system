@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Solo Travel Guide</title>
+    <link rel="stylesheet" href="solostyles.css">
+</head>
+<body>
+    <header>
+        <h1>Solo Travel Guide</h1>
+        <nav>
+            <ul>
+                <li><a href="#tips">Solo Travel Tips</a></li>
+                <li><a href="#connect">Connect with Others</a></li>
+                <li><a href="#destinations">Best Destinations</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="tips">
+        <h2>🌍 Solo Travel Tips</h2>
+        <div class="tips-container">
+            <div class="tip" onclick="toggleTip('tip1')">
+                <strong>1. Plan Your Itinerary</strong>
+                <div id="tip1" class="tip-content">
+                    Research your destination and plan your key stops. Always have a backup plan.
+                </div>
+            </div>
+            <div class="tip" onclick="toggleTip('tip2')">
+                <strong>2. Stay Connected</strong>
+                <div id="tip2" class="tip-content">
+                    Have a charged phone, a power bank, and consider getting a local SIM card.
+                </div>
+            </div>
+            <div class="tip" onclick="toggleTip('tip3')">
+                <strong>3. Trust Your Instincts</strong>
+                <div id="tip3" class="tip-content">
+                    If something feels off, trust your gut and remove yourself from the situation.
+                </div>
+            </div>
+            <div class="tip" onclick="toggleTip('tip4')">
+                <strong>4. Pack Light</strong>
+                <div id="tip4" class="tip-content">
+                    Traveling solo? Keep your luggage minimal for easy movement.
+                </div>
+            </div>
+            <div class="tip" onclick="toggleTip('tip5')">
+                <strong>5. Meet Other Travelers</strong>
+                <div id="tip5" class="tip-content">
+                    Stay in hostels, join tours, or use travel apps to connect with others.
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="connect">
+        <h2>🤝 Connect with Other Travelers</h2>
+        <p>Enter your details to find fellow solo travelers:</p>
+        <form id="connectForm">
+            <input type="text" id="name" placeholder="Your Name" required>
+            <input type="text" id="destination" placeholder="Destination" required>
+            <button type="submit">Find Travel Buddies</button>
+        </form>
+        <p id="response"></p>
+    </section>
+
+    <section id="destinations">
+        <h2>🌟 Best Solo Travel Destinations</h2>
+        <ul>
+            <li>🏕 Thailand – Backpacker friendly & affordable.</li>
+            <li>🏙 Japan – Safe & excellent public transport.</li>
+            <li>🌊 Portugal – Beautiful coast & solo-friendly.</li>
+            <li>🏔 New Zealand – Adventure capital for solo explorers.</li>
+        </ul>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Solo Trip Guide</p>
+    </footer>
+    
+    <script src="soloscript.js"></script>
+</body>
+</html>

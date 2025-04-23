@@ -1,0 +1,90 @@
+/* styles.css */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+}
+
+header {
+    background-color: #4c9baf;
+    color: white;
+    padding: 1rem;
+    text-align: center;
+}
+
+main {
+    padding: 2rem;
+}
+
+.selection {
+    background-color: white;
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: 2rem;
+}
+
+.selection h2 {
+    margin-top: 0;
+}
+
+label {
+    display: block;
+    margin-top: 1rem;
+}
+
+select, button {
+    width: 100%;
+    padding: 0.5rem;
+    margin-top: 0.5rem;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+}
+
+button {
+    background-color: #4c6aaf;
+    color: white;
+    border: none;
+    cursor: pointer;
+    margin-top: 1rem;
+}
+
+button:hover {
+    background-color: #456ba0;
+}
+
+.recommendations {
+    background-color: white;
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.destination {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.destination img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-right: 1rem;
+}
+
+.destination h3 {
+    margin: 0;
+}
+
+footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: #4c95af;
+    color: white;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
